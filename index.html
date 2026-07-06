@@ -284,7 +284,7 @@
     .feature-card { display: flex; flex-direction: column; gap: 16px; }
     .feature-card img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border-light); box-shadow: var(--shadow); object-fit: contain; transition: transform var(--transition); }
     .feature-card img:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
-    .feature-title { font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: -8px; }
+    .feature-title { font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; }
     .feature-desc { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; }
     /* Case 05: Comparison & Flow */
     .case-compare-list { display: flex; flex-direction: column; gap: 48px; }
@@ -463,7 +463,7 @@
     .tiktok__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .tiktok-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: all var(--transition); border: 1px solid var(--border-light); }
     .tiktok-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-    .tiktok-card__video-wrapper { position: relative; aspect-ratio: 9/16; overflow: hidden; background: var(--text-primary); }
+    .tiktok-card__video-wrapper { display: block; position: relative; aspect-ratio: 9/16; overflow: hidden; background: var(--text-primary); }
     .tiktok-card__thumbnail { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease; }
     .tiktok-card__play-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: rgba(26, 10, 46, 0.25); opacity: 0; transition: opacity var(--transition); }
     .tiktok-card:hover .tiktok-card__play-overlay { opacity: 1; }
@@ -829,6 +829,8 @@
               <span class="badge">Veo</span>
               <span class="badge">Kling AI</span>
               <span class="badge">Midjourney</span>
+              <span class="badge">Banana Nano</span>
+              <span class="badge">Evanto</span>
             </div>
           </div>
           <div class="toolkit__group">
@@ -1257,7 +1259,7 @@
 
 
     var toolkit = {
-      ai: ["ChatGPT", "Gemini", "Claude", "Perplexity", "DeepSeek", "Manus", "Flow (Google)", "Veo", "Midjourney", "Gamma", "Napkin"],
+      ai: ["ChatGPT", "Gemini", "Claude", "DeepSeek", "Manus", "Flow (Google)", "Veo", "Midjourney","Evanto","Kling AI","Banana Nano"],
       technical: ["Python", "Raspberry Pi", "Jetson Nano", "SQL (Basic)"],
       creative: ["Canva", "CapCut"],
       learning: ["Agentic AI", "AI Product Thinking", "Workflow Automation", "LLM Applications"]
@@ -1438,18 +1440,6 @@
           <div class="flow-arrow">↓</div>
           <div class="flow-step" style="background: var(--primary); color: var(--white); border: none;">Livestream</div>
         </div>
-      </div>
-
-      <!-- 4. Hero Video -->
-      <div class="case-section">
-        <h3 class="case-title">Hero Video</h3>
-        <div class="video-wrapper video-wrapper--landscape">
-          <video controls preload="metadata">
-            <source src="images/work/smartcontrol/fay.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <p class="case-caption">AI-powered Vietnamese Live2D Virtual Streamer demonstrating real-time conversation.</p>
       </div>
 
       <!-- 4.5 Content Series -->
@@ -1711,7 +1701,7 @@
         <h3 class="case-title">Hero Video</h3>
         <div class="video-wrapper hero-video">
           <video controls preload="metadata">
-            <source src="images/work/hugu/content1.mov" type="video/quicktime">
+            <source src="images/work/hugu/content1.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -1733,9 +1723,9 @@
         <h3 class="case-title">Content Series</h3>
         <p class="case-text">A collection of short-form fashion videos created for HUGU's social media channels.</p>
         <div class="case-gallery-grid">
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content2.mov" type="video/quicktime"></video></div>
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content3.mov" type="video/quicktime"></video></div>
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content4.mov" type="video/quicktime"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content2.mp4" type="video/mp4"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content3.mp4" type="video/mp4"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content4.mp4" type="video/mp4"></video></div>
         </div>
       </div>
 
@@ -1804,16 +1794,16 @@
         <div class="case-compare-list">
           <div class="compare-card">
             <div class="compare-images">
-              <div class="compare-img"><div class="compare-label">Prompt</div><img src="images/work/optimal365/prompt1.jpg" alt="Prompt" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
-              <div class="compare-img"><div class="compare-label">Result</div><img src="images/work/optimal365/kq1.jpg" alt="Result" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
+              <div class="compare-img"><div class="compare-label">Prompt</div><img src="images/work/optimal365/prompt1.png" alt="Prompt" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
+              <div class="compare-img"><div class="compare-label">Result</div><img src="images/work/optimal365/kq1.png" alt="Result" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
             </div>
             <h4 class="feature-title">Poster Layout Planning</h4>
             <p class="feature-desc">Collaborated with ChatGPT to develop poster layouts by refining visual hierarchy, typography, spacing, and composition. Applied the AI recommendations to create healthcare promotional designs aligned with the brand identity.</p>
           </div>
           <div class="compare-card">
             <div class="compare-images">
-              <div class="compare-img"><div class="compare-label">Prompt</div><img src="images/work/optimal365/prompt2.jpg" alt="Prompt" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
-              <div class="compare-img"><div class="compare-label">Result</div><img src="images/work/optimal365/kq2.jpg" alt="Result" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
+              <div class="compare-img"><div class="compare-label">Prompt</div><img src="images/work/optimal365/prompt2.png" alt="Prompt" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
+              <div class="compare-img"><div class="compare-label">Result</div><img src="images/work/optimal365/kq2.png" alt="Result" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
             </div>
             <h4 class="feature-title">AI Image Prompt Engineering</h4>
             <p class="feature-desc">Designed detailed prompts with ChatGPT for Banana Nano image generation, iteratively refining prompts to achieve visuals suitable for healthcare marketing campaigns and social media content.</p>
@@ -2008,24 +1998,24 @@
         channel: "@luenguynnn",
         title: "Matcha Đậm Gu Series",
         url: "https://www.tiktok.com/@luenguynnn/video/7495660556024597768",
-        fallbackThumbnail: "images/reels/reel1.jpg",
-        metrics: { views: "20K+", likes: "1.5K" }
+        thumbnail: "images/reels/reel1.jpg",
+        metrics: { views: "27.4K", likes: "1.2K" }
       },
       {
         id: 2,
         channel: "@_bylue",
-        title: "Cashless Payment in Malaysia",
+        title: "Concert Tips in Malaysia",
         url: "https://www.tiktok.com/@_bylue/video/7645317932536515848",
-        fallbackThumbnail: "images/reels/reel2.jpg",
-        metrics: { views: "15K", likes: "800" }
+        thumbnail: "images/reels/reel2.png",
+        metrics: { views: "8K", likes: "420" }
       },
       {
         id: 3,
         channel: "@_bylue",
-        title: "Concert Tips in Malaysia",
+        title: "Cashless Payment in Malaysia",
         url: "https://www.tiktok.com/@_bylue/video/7626693604282486034",
-        fallbackThumbnail: "images/reels/reel3.jpg",
-        metrics: { views: "12K", likes: "650" }
+        thumbnail: "images/reels/reel3.jpg",
+        metrics: { views: "12K", likes: "506" }
       }
     ];
 
@@ -2035,7 +2025,7 @@
         id: r.id,
         title: r.title,
         videoUrl: r.url,
-        thumbnail: r.fallbackThumbnail,
+        thumbnail: r.thumbnail,
         link: r.url,
         metrics: r.metrics,
         description: r.channel
@@ -2318,16 +2308,19 @@
         var r = reelsData[i];
         var utmLink = r.url + (r.url.indexOf('?') > -1 ? '&' : '?') + 'utm_source=portfolio&utm_medium=website';
         html += '<div class="tiktok-card">' +
-          '<div class="tiktok-card__video-wrapper">' +
-            '<img src="' + r.fallbackThumbnail + '" alt="' + r.title + '" class="tiktok-card__thumbnail" loading="lazy" onerror="handleImageError(this)" />' +
+          '<a href="' + utmLink + '" target="_blank" rel="noopener" class="tiktok-card__video-wrapper" aria-label="Watch ' + r.title + ' on TikTok">' +
+            '<img src="' + r.thumbnail + '" alt="' + r.title + '" class="tiktok-card__thumbnail" loading="lazy" />' +
             '<div class="tiktok-card__play-overlay">' +
-              '<div class="tiktok-card__play-btn"><i class="fas fa-play"></i></div>' +
-              '<div class="tiktok-card__hover-metrics">' +
+              '<div class="tiktok-card__play-btn">' +
+                '<i class="fas fa-play"></i>' +
+              '</div>' +
+               '<div class="tiktok-card__hover-metrics">' +
                 '<span><i class="fas fa-eye"></i> ' + r.metrics.views + '</span>' +
                 '<span><i class="fas fa-heart"></i> ' + r.metrics.likes + '</span>' +
               '</div>' +
             '</div>' +
-          '</div>' +
+          '</a>'+
+    
           '<div class="tiktok-card__info">' +
             '<div class="tiktok-card__title">' + r.title + '</div>' +
             '<div class="tiktok-card__description">' + r.channel + '</div>' +
