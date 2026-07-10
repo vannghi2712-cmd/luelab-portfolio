@@ -1,0 +1,7 @@
+# robots.txt
+# Portfolio Website
+
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio.luelab.io.vn/sitemap.xml

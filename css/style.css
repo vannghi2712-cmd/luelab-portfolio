@@ -555,6 +555,7 @@
         padding-inline: 4px;
         scrollbar-width: none;
         -ms-overflow-style: none;
+        min-width: 0;
       }
       .scrollytelling::-webkit-scrollbar { display: none; }
       .chapter {
@@ -569,7 +570,8 @@
       .chapter__text { max-width: none; margin-inline: 0; }
 
       /* --- Story: compact horizontal gallery --- */
-      .about__visual { max-width: none; }
+      .about__content { min-width: 0; }
+      .about__visual { max-width: none; min-width: 0; }
       .about-gallery {
         aspect-ratio: auto;
         height: 220px;
@@ -583,6 +585,7 @@
         padding-inline: 4px;
         scrollbar-width: none;
         -ms-overflow-style: none;
+        min-width: 0;
       }
       .about-gallery::-webkit-scrollbar { display: none; }
       .about-gallery img {
