@@ -5,17 +5,17 @@
     var personal = {
       name: "Van Nghi (Louise) Nguyen",
       title: "AI Content & Creative Specialist",
-      avatar: "images/avatar.png",
+      avatar: "images/avatar.webp",
       email: "vannghi2712@gmail.com",
       phone: "036 5054 941",
       location: "An Dong Ward, HCMC, Vietnam",
       bio: "I'm Van Nghi (Louise), an Artificial Intelligence and IoT graduate with a passion for combining technology, creativity, and problem-solving. My background spans both AI and digital marketing, where I've worked across content creation, social media, and AI-assisted workflows. I enjoy exploring emerging AI tools, experimenting with new technologies, and finding practical ways to improve research, productivity, and business processes. I believe creativity and analytical thinking complement each other. My technical foundation helps me approach problems systematically, while my creative experience enables me to communicate ideas that resonate with people. I'm driven by curiosity and continuous learning, and I enjoy turning new technologies into meaningful solutions that create real impact.",
       objective: "Aspiring AI Engineer with a foundation in IoT and Artificial Intelligence, strong programming experience (Python, C, C++), hands-on with embedded platforms (Raspberry Pi, Jetson) and cloud & database tools. Seeking to contribute to AnyGenAI's mission of enabling enterprise-scale generative AI solutions by leveraging my background in data-driven marketing, IoT systems and AI model foundations.",
       storyGallery: [
-        "images/story/story1.jpg",
-        "images/story/story2.jpg",
-        "images/story/story3.jpg",
-        "images/story/story4.jpg"
+        "images/story/story1.webp",
+        "images/story/story2.webp",
+        "images/story/story3.webp",
+        "images/story/story4.webp"
       ],
       social: {
         facebook: "https://www.facebook.com/nngblnk/",
@@ -32,7 +32,7 @@
           username: "@_bylue",
           category: "Personal \u2022 Lifestyle \u2022 Vlogs",
           description: "Sharing everyday moments, personal experiences, travel, and life outside of work.",
-          avatar: "images/social/matcha.png",
+          avatar: "images/social/matcha.webp",
           url: "https://www.tiktok.com/@_bylue"
         },
         {
@@ -41,7 +41,7 @@
           username: "@luenguynnn",
           category: "Matcha \u2022 Caf\u00e9 \u2022 Food Reviews",
           description: "A dedicated space for matcha reviews, caf\u00e9s, and food discoveries.",
-          avatar: "images/social/personal.png",
+          avatar: "images/social/personal.webp",
           url: "https://www.tiktok.com/@luenguynnn"
         }
       ]
@@ -63,7 +63,7 @@
       {
         id: 8,
         company: "Smart Control Trading & Services Co., Ltd.",
-        logoImg: "images/journey/smartcontrol.png",
+        logoImg: "images/journey/smartcontrol.webp",
         industry: "Smart Automation & AI Solutions",
         role: "AI Automation Engineer Intern",
         employment: "Internship",
@@ -90,7 +90,7 @@
       {
         id: 1,
         company: "Maikaa Studio",
-        logoImg: "images/journey/maikaa.jpg",
+        logoImg: "images/journey/maikaa.webp",
         industry: "Local Women's Fashion Brand",
         role: "Booking KOL/KOC",
         employment: "Freelance",
@@ -116,7 +116,7 @@
       {
         id: 2,
         company: "Sparkle",
-        logoImg: "images/journey/sparkle.jpg",
+        logoImg: "images/journey/sparkle.webp",
         industry: "Fashion Accessories",
         role: "Social Media & Content Influencer",
         employment: "Hybrid",
@@ -149,7 +149,7 @@
       {
         id: 3,
         company: "Optimal 365 Chiropractic",
-        logoImg: "images/journey/optimal365.jpg",
+        logoImg: "images/journey/optimal365.webp",
         industry: "Wellness",
         role: "Content Creator",
         employment: "Full-time",
@@ -177,7 +177,7 @@
       {
         id: 4,
         company: "HUGU",
-        logoImg: "images/journey/hugu.jpg",
+        logoImg: "images/journey/hugu.webp",
         industry: "Fashion & E-commerce",
         role: "E-commerce & Marketing Executive",
         employment: "Full-time",
@@ -213,7 +213,7 @@
       {
         id: 5,
         company: "RITARA Fashion",
-        logoImg: "images/journey/ritara.jpg",
+        logoImg: "images/journey/ritara.webp",
         industry: "Premium Women's Fashion",
         role: "Marketing & Content Executive",
         employment: "Full-time",
@@ -249,7 +249,7 @@
       {
         id: 6,
         company: "Namperfume",
-        logoImg: "images/journey/namperfume.jpg",
+        logoImg: "images/journey/namperfume.webp",
         industry: "Fragrance Retail",
         role: "TikTok Shop Manager & Livestream Host",
         employment: "Full-time",
@@ -323,7 +323,7 @@
       {
         id: 1,
         title: "CASE 01: Sparkle - AI-powered Organic Storytelling",
-        thumbnail: "images/work/sparkle/project1.jpg",
+        thumbnail: "images/work/sparkle/project1.webp",
         description: "Turning product education into organic engagement through an AI-assisted creative workflow.",
         isPremiumCase: true,
         caseHtml: `
@@ -348,7 +348,7 @@
       <!-- 3. AI Workflow -->
       <div class="case-section case-workflow">
         <div class="workflow-img">
-          <img src="images/work/sparkle/prompt1.jpg" alt="AI Prompt Screenshot" loading="lazy" />
+          <img src="images/work/sparkle/prompt1.webp" alt="AI Prompt Screenshot" loading="lazy" />
         </div>
         <div class="workflow-content">
           <h3 class="case-title">AI-assisted Workflow</h3>
@@ -422,7 +422,7 @@
       {
         id: 6,
         title: "CASE 06: Smart Control - AI-powered Virtual Livestream Assistant",
-        thumbnail: "images/work/smartcontrol/project6.jpg",
+        thumbnail: "images/work/smartcontrol/project6.webp",
         description: "Researching, deploying, and optimizing an AI-powered virtual livestream assistant based on the open-source Fay AI framework.",
         isPremiumCase: true,
         caseHtml: `
@@ -537,7 +537,7 @@
       {
         id: 2,
         title: "CASE 02: RITARA Fashion - Fashion Communication Campaigns",
-        thumbnail: "images/work/ritara/project2.jpg",
+        thumbnail: "images/work/ritara/project2.webp",
         description: "Building brand visibility through lookbooks, fashion sponsorships, and short-form storytelling.",
         isPremiumCase: true,
         caseHtml: `
@@ -625,7 +625,7 @@
       {
         id: 3,
         title: "CASE 03: Namperfume - Building Social Commerce Through TikTok Shop",
-        thumbnail: "images/work/namperfume/project3.jpg",
+        thumbnail: "images/work/namperfume/project3.webp",
         description: "Launching TikTok Shop from the ground up through livestream commerce, promotional content, and data-driven customer engagement.",
         isPremiumCase: true,
         caseHtml: `
@@ -698,7 +698,7 @@
       {
         id: 4,
         title: "CASE 04: HUGU - Trend-driven Fashion Content",
-        thumbnail: "images/work/hugu/project4.jpg",
+        thumbnail: "images/work/hugu/project4.webp",
         description: "Creating short-form fashion content that combines styling inspiration, trend integration, and authentic product experiences.",
         isPremiumCase: true,
         caseHtml: `
@@ -772,7 +772,7 @@
       {
         id: 5,
         title: "CASE 05: Optimal 365 Chiropractic - AI-powered Healthcare Marketing",
-        thumbnail: "images/work/optimal365/project5.jpg",
+        thumbnail: "images/work/optimal365/project5.webp",
         description: "Integrated Manus AI, ChatGPT, and Gemini into the healthcare marketing workflow\u2014from competitor research and campaign strategy to SEO, creative production, and content optimization.",
         isPremiumCase: true,
         caseHtml: `
@@ -793,17 +793,17 @@
         </div>
         <div class="case-feature-grid">
           <div class="feature-card">
-            <img src="images/work/optimal365/analys.jpg" alt="Performance Analysis" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
+            <img src="images/work/optimal365/analys.webp" alt="Performance Analysis" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
             <h4 class="feature-title">Performance Analysis</h4>
             <p class="feature-desc">Uploaded Meta performance reports into Manus AI to identify key engagement patterns, high-performing content pillars, and content gaps. Used the AI-generated insights to recommend improvements for future Facebook and social media campaigns.</p>
           </div>
           <div class="feature-card">
-            <img src="images/work/optimal365/doithu.jpg" alt="Competitor Research" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
+            <img src="images/work/optimal365/doithu.webp" alt="Competitor Research" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
             <h4 class="feature-title">Competitor Research</h4>
             <p class="feature-desc">Conducted AI-assisted competitor benchmarking to analyze content strategies, posting frequency, audience engagement, and communication styles of leading chiropractic clinics. The findings helped identify best practices and market opportunities for Optimal 365.</p>
           </div>
           <div class="feature-card">
-            <img src="images/work/optimal365/rebrand.jpg" alt="Rebranding Strategy" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
+            <img src="images/work/optimal365/rebrand.webp" alt="Rebranding Strategy" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
             <h4 class="feature-title">Rebranding Strategy</h4>
             <p class="feature-desc">Used Manus AI to generate a comprehensive rebranding strategy, including brand positioning, communication direction, content pillars, and campaign recommendations tailored to the healthcare industry.</p>
           </div>
@@ -819,16 +819,16 @@
         <div class="case-compare-list">
           <div class="compare-card">
             <div class="compare-images">
-              <div class="compare-img"><div class="compare-label">Prompt</div><img src="images/work/optimal365/prompt1.png" alt="Prompt" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
-              <div class="compare-img"><div class="compare-label">Result</div><img src="images/work/optimal365/kq1.png" alt="Result" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
+              <div class="compare-img"><div class="compare-label">Prompt</div><img src="images/work/optimal365/prompt1.webp" alt="Prompt" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
+              <div class="compare-img"><div class="compare-label">Result</div><img src="images/work/optimal365/kq1.webp" alt="Result" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
             </div>
             <h4 class="feature-title">Poster Layout Planning</h4>
             <p class="feature-desc">Collaborated with ChatGPT to develop poster layouts by refining visual hierarchy, typography, spacing, and composition. Applied the AI recommendations to create healthcare promotional designs aligned with the brand identity.</p>
           </div>
           <div class="compare-card">
             <div class="compare-images">
-              <div class="compare-img"><div class="compare-label">Prompt</div><img src="images/work/optimal365/prompt2.png" alt="Prompt" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
-              <div class="compare-img"><div class="compare-label">Result</div><img src="images/work/optimal365/kq2.png" alt="Result" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
+              <div class="compare-img"><div class="compare-label">Prompt</div><img src="images/work/optimal365/prompt2.webp" alt="Prompt" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
+              <div class="compare-img"><div class="compare-label">Result</div><img src="images/work/optimal365/kq2.webp" alt="Result" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" /></div>
             </div>
             <h4 class="feature-title">AI Image Prompt Engineering</h4>
             <p class="feature-desc">Designed detailed prompts with ChatGPT for Banana Nano image generation, iteratively refining prompts to achieve visuals suitable for healthcare marketing campaigns and social media content.</p>
@@ -844,22 +844,22 @@
         </div>
         <div class="case-feature-grid" style="grid-template-columns: repeat(2, 1fr);">
           <div class="feature-card">
-            <img src="images/work/optimal365/prompt3.jpg" alt="SEO Content Generation" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
+            <img src="images/work/optimal365/prompt3.webp" alt="SEO Content Generation" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
             <h4 class="feature-title">SEO Content Generation</h4>
             <p class="feature-desc">Used Gemini to generate SEO-optimized healthcare articles based on target keywords and search intent, then refined the content to align with the clinic's tone of voice and marketing objectives.</p>
           </div>
           <div class="feature-card">
-            <img src="images/work/optimal365/prompt4.jpg" alt="AI Video Ideation" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
+            <img src="images/work/optimal365/prompt4.webp" alt="AI Video Ideation" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
             <h4 class="feature-title">AI Video Ideation (Veo)</h4>
             <p class="feature-desc">Developed video concepts and Veo prompts for short-form healthcare content, focusing on storytelling, educational messaging, and audience engagement.</p>
           </div>
           <div class="feature-card">
-            <img src="images/work/optimal365/prompt5.jpg" alt="Social Media Caption Writing" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
+            <img src="images/work/optimal365/prompt5.webp" alt="Social Media Caption Writing" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
             <h4 class="feature-title">Social Media Caption Writing</h4>
             <p class="feature-desc">Generated multiple caption variations using Gemini, adapting messaging for Facebook campaigns while balancing educational value, emotional appeal, and call-to-action effectiveness.</p>
           </div>
           <div class="feature-card">
-            <img src="images/work/optimal365/prompt6.jpg" alt="AI Image Generation" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
+            <img src="images/work/optimal365/prompt6.webp" alt="AI Image Generation" loading="lazy" onclick="window.open(this.src, '_blank')" style="cursor:zoom-in;" />
             <h4 class="feature-title">AI Image Generation</h4>
             <p class="feature-desc">Leveraged Gemini to generate AI-assisted visual concepts and image prompts, supporting faster creative exploration and content production for healthcare campaigns.</p>
           </div>
@@ -906,7 +906,7 @@
       {
         id: 7,
         title: "CASE 07: Personal Brand Lab",
-        thumbnail: "images/work/canhan/project7.jpg",
+        thumbnail: "images/work/canhan/project7.webp",
         description: "Building two creator brands through authentic storytelling and self-produced content.",
         isPremiumCase: true,
         caseHtml: `
@@ -926,7 +926,7 @@
           <h3 class="case-title">Content Direction</h3>
           <div class="case-feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
             <div class="feature-card">
-              <img src="images/work/canhan/luenguynnn.jpg" alt="@luenguynn" loading="lazy" style="border-radius: 12px; border: 1px solid var(--border-light); width: 100%; height: auto;" />
+              <img src="images/work/canhan/luenguynnn.webp" alt="@luenguynn" loading="lazy" style="border-radius: 12px; border: 1px solid var(--border-light); width: 100%; height: auto;" />
               <h4 class="feature-title" style="margin-top: 12px;">@luenguynn</h4>
               <p class="feature-desc" style="font-weight: 600; color: var(--primary); margin-bottom: 8px;">F&amp;B Review Creator</p>
               <ul style="padding-left: 20px; color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem;">
@@ -937,7 +937,7 @@
               </ul>
             </div>
             <div class="feature-card">
-              <img src="images/work/canhan/_bylue.jpg" alt="@_bylue" loading="lazy" style="border-radius: 12px; border: 1px solid var(--border-light); width: 100%; height: auto;" />
+              <img src="images/work/canhan/_bylue.webp" alt="@_bylue" loading="lazy" style="border-radius: 12px; border: 1px solid var(--border-light); width: 100%; height: auto;" />
               <h4 class="feature-title" style="margin-top: 12px;">@_bylue</h4>
               <p class="feature-desc" style="font-weight: 600; color: var(--primary); margin-bottom: 8px;">Lifestyle Creator</p>
               <ul style="padding-left: 20px; color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem;">
@@ -1023,7 +1023,7 @@
         channel: "@luenguynnn",
         title: "Matcha Đậm Gu Series",
         url: "https://www.tiktok.com/@luenguynnn/video/7495660556024597768",
-        thumbnail: "images/reels/reel1.jpg",
+        thumbnail: "images/reels/reel1.webp",
         metrics: { views: "27.4K", likes: "1.2K" }
       },
       {
@@ -1031,7 +1031,7 @@
         channel: "@_bylue",
         title: "Concert Tips in Malaysia",
         url: "https://www.tiktok.com/@_bylue/video/7645317932536515848",
-        thumbnail: "images/reels/reel2.png",
+        thumbnail: "images/reels/reel2.webp",
         metrics: { views: "8K", likes: "420" }
       },
       {
@@ -1039,7 +1039,7 @@
         channel: "@_bylue",
         title: "Cashless Payment in Malaysia",
         url: "https://www.tiktok.com/@_bylue/video/7626693604282486034",
-        thumbnail: "images/reels/reel3.jpg",
+        thumbnail: "images/reels/reel3.webp",
         metrics: { views: "12K", likes: "506" }
       }
     ];
