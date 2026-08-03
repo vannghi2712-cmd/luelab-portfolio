@@ -385,29 +385,40 @@
 
     /* --- Projects --- */
     .projects { background: var(--white); }
-    .projects__grid { column-count: 3; column-gap: 24px; }
-    .project-card { break-inside: avoid; margin-bottom: 24px; border-radius: var(--radius); overflow: hidden; position: relative; cursor: pointer; box-shadow: var(--shadow); transition: all var(--transition); }
+    .projects__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .project-card { border-radius: var(--radius); overflow: hidden; position: relative; cursor: pointer; box-shadow: var(--shadow); transition: all var(--transition); }
     .project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-    .project-card__image { width: 100%; display: block; transition: transform 0.5s ease; background: linear-gradient(135deg, var(--primary-light), var(--bg-alt)); min-height: 200px; }
+    .project-card__image { width: 100%; display: block; transition: transform 0.5s ease; background: linear-gradient(135deg, var(--primary-light), var(--bg-alt)); aspect-ratio: 4/5; object-fit: cover; object-position: center; }
     .project-card:hover .project-card__image { transform: scale(1.05); }
     .project-card__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(26, 10, 46, 0.8) 0%, rgba(214, 151, 255, 0.05) 60%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; transition: all var(--transition); }
     .project-card:hover .project-card__overlay { background: linear-gradient(to top, rgba(26, 10, 46, 0.9) 0%, rgba(214, 151, 255, 0.2) 70%, rgba(214, 151, 255, 0.1) 100%); }
     .project-card__icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); width: 52px; height: 52px; background: rgba(255, 255, 255, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-dark); font-size: 1.2rem; transition: transform var(--transition); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
     .project-card:hover .project-card__icon { transform: translate(-50%, -50%) scale(1); }
-    .project-card__title { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
-    .project-card__desc { font-size: 0.8rem; color: rgba(255,255,255,0.75); line-height: 1.5; }
+    .project-card__title { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .project-card__desc { font-size: 0.8rem; color: rgba(255,255,255,0.75); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
-    /* Masonry height variations */
-    .project-card:nth-child(odd) .project-card__image { aspect-ratio: 4/5; object-fit: cover; }
-    .project-card:nth-child(even) .project-card__image { aspect-ratio: 1/1; object-fit: cover; }
-    .project-card:nth-child(3n) .project-card__image { aspect-ratio: 3/4; object-fit: cover; }
+    /* Featured hero card — spans 2 columns on desktop, normalised on smaller screens */
+   /* Featured card keeps normal project size */
+    .project-card--featured {
+        grid-column: span 1;
+    }
 
-    /* Landscape override for CASE 03 and CASE 04 */
-    .project-card[data-project-id="3"] .project-card__image,
-    .project-card[data-project-id="4"] .project-card__image { 
-      aspect-ratio: 16/9; 
-      object-fit: cover; 
-      object-position: center; 
+    .project-card--featured .project-card__overlay {
+        background: linear-gradient(
+            to top,
+            rgba(26,10,46,.82) 0%,
+            rgba(26,10,46,.28) 58%,
+            transparent 100%
+        );
+    }
+
+    .project-card--featured:hover .project-card__overlay {
+        background: linear-gradient(
+            to top,
+            rgba(26,10,46,.90) 0%,
+            rgba(214,151,255,.18) 70%,
+            rgba(214,151,255,.08) 100%
+        );
     }
 
     /* --- TikTok --- */
@@ -504,7 +515,8 @@
       .about__grid { grid-template-columns: 1fr; gap: 36px; }
       .about__visual { order: 1; max-width: 400px; margin-inline: auto; width: 100%; }
       .about__content { order: 2; }
-      .projects__grid { column-count: 2; }
+      .projects__grid { grid-template-columns: repeat(2, 1fr); }
+      .project-card--featured { grid-column: auto; }
       .tiktok__grid { grid-template-columns: repeat(2, 1fr); }
       .toolkit__groups { grid-template-columns: 1fr; }
       .skills__grid { grid-template-columns: 1fr; }
@@ -533,7 +545,7 @@
       .exp-card { flex: 0 0 auto; width: 100%; }
       .experience__scroll-hint { display: none; }
 
-      .projects__grid { column-count: 1; }
+      .projects__grid { grid-template-columns: 1fr; }
       .tiktok__grid { grid-template-columns: 1fr; max-width: 360px; margin-inline: auto; }
 
       .section { padding-block: 64px; }

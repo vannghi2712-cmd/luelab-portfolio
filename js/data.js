@@ -94,7 +94,7 @@
         industry: "Local Women's Fashion Brand",
         role: "Booking KOL/KOC",
         employment: "Freelance",
-        period: "Jan 2026 \u2013 Present",
+        period: "Jan 2026 \u2013 May 2026",
         tasks: [
           "Identified suitable creators for brand campaigns.",
           "Contacted influencers and negotiated collaborations.",
@@ -320,6 +320,639 @@
     };
 
     var projects = [
+      {
+        id: 9,
+        title: "CASE 09: AIHome \u2013 48-Hour AI-Powered Content Creator Assessment",
+        thumbnail: "images/work/aihome/project9.webp",
+        isFeatured: true,
+        description: "A 48-hour AI-Powered Content Creator hiring assessment \u2013 designing a reusable AI content system to deliver strategy, scripts, SEO assets and AI-generated videos for AIHOME Malaysia.",
+        isPremiumCase: true,
+        caseHtml: `
+    <div class="case-aihome">
+      <style>
+      /* ================================================================
+         AIHOME CASE STUDY \u2014 SCOPED STYLES
+         Every selector starts with .case-aihome \u2014 zero global pollution.
+         No generic tag targets. No global class targets.
+      ================================================================ */
+      .case-aihome * { box-sizing: border-box; }
+      .case-aihome p  { font-weight: 400; margin: 0 0 10px; }
+      .case-aihome strong { font-weight: 700; }
+      .case-aihome em { font-style: italic; font-weight: 400; }
+
+      /* Section cadence */
+      .case-aihome .ca-sec  { margin-bottom: 52px; }
+      .case-aihome .ca-sec:last-child { margin-bottom: 0; }
+
+      /* Prose width cap (not applied to tables / media / cards) */
+      .case-aihome .ca-prose { max-width: 65ch; }
+
+      /* Headings */
+      .case-aihome .ca-h2  { font-size: 1.2rem;  font-weight: 700; color: var(--text-primary); margin: 0 0 6px; line-height: 1.35; }
+      .case-aihome .ca-h3  { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin: 0 0 6px; }
+      .case-aihome .ca-sub { font-size: 0.92rem; font-weight: 400; color: var(--text-secondary); margin: 0 0 18px; line-height: 1.65; }
+
+      /* ---- PRIMARY METRICS (3-up) ---- */
+      .case-aihome .ca-pm-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin: 20px 0 12px; }
+      .case-aihome .ca-pm {
+        background: var(--bg);
+        border: 2px solid var(--primary-light, rgba(214,151,255,.25));
+        border-radius: 16px; padding: 18px 10px; text-align: center;
+      }
+      .case-aihome .ca-pm-n { font-size: 1.85rem; font-weight: 700; color: var(--primary-dark); line-height: 1.1; }
+      .case-aihome .ca-pm-l { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-secondary); margin-top: 4px; }
+
+      /* ---- SECONDARY METRICS (2-col) ---- */
+      .case-aihome .ca-sm-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; }
+      .case-aihome .ca-sm {
+        background: var(--bg); border: 1px solid var(--border-light);
+        border-radius: 10px; padding: 10px 14px;
+        display: flex; align-items: center; gap: 8px;
+      }
+      .case-aihome .ca-sm-ic { font-size: 1rem; flex-shrink: 0; line-height: 1; }
+      .case-aihome .ca-sm-tx { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); }
+
+      @media (max-width: 540px) {
+        .case-aihome .ca-pm-grid { grid-template-columns: 1fr 1fr; }
+        .case-aihome .ca-sm-grid { grid-template-columns: 1fr; }
+      }
+
+      /* ---- ASSESSMENT SNAPSHOT ---- */
+      .case-aihome .ca-snap {
+        border: 1px solid var(--border-light);
+        border-left: 4px solid var(--primary);
+        border-radius: 16px; overflow: hidden;
+      }
+      .case-aihome .ca-snap-g { display: grid; grid-template-columns: 1fr 1fr; }
+      @media (max-width: 540px) { .case-aihome .ca-snap-g { grid-template-columns: 1fr; } }
+      .case-aihome .ca-snap-r { padding: 13px 18px; border-bottom: 1px solid var(--border-light); }
+      .case-aihome .ca-snap-g .ca-snap-r:nth-child(even) { border-left: 1px solid var(--border-light); }
+      .case-aihome .ca-snap-g .ca-snap-r:last-child,
+      .case-aihome .ca-snap-g .ca-snap-r:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+      .case-aihome .ca-snap-lbl { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--primary-dark); margin-bottom: 3px; }
+      .case-aihome .ca-snap-val { font-size: 0.87rem; font-weight: 400; color: var(--text-primary); line-height: 1.5; }
+
+      /* ---- QUOTES ---- */
+      .case-aihome .ca-quotes { display: flex; flex-direction: column; gap: 10px; }
+      .case-aihome .ca-q {
+        border-left: 3px solid var(--primary);
+        border-radius: 0 10px 10px 0;
+        padding: 14px 18px; background: var(--bg);
+      }
+      .case-aihome .ca-q-mark { font-size: 1.5rem; color: var(--primary); font-weight: 700; line-height: 1; margin-bottom: 4px; }
+      .case-aihome .ca-q-text { margin: 0; font-style: italic; font-size: 0.97rem; font-weight: 400; color: var(--text-primary); }
+
+      /* ---- TIMELINE ---- */
+      .case-aihome .ca-tl-wrap { max-width: 460px; margin: 0 auto; }
+      .case-aihome .ca-tl-row  { display: flex; gap: 14px; align-items: flex-start; }
+      .case-aihome .ca-tl-sp   { display: flex; flex-direction: column; align-items: center; width: 26px; flex-shrink: 0; }
+      .case-aihome .ca-tl-dot  { width: 11px; height: 11px; border-radius: 50%; background: var(--primary); border: 2px solid var(--primary-light, rgba(214,151,255,.3)); margin-top: 5px; flex-shrink: 0; }
+      .case-aihome .ca-tl-dot-s { background: var(--text-secondary); }
+      .case-aihome .ca-tl-dot-e { background: var(--primary-dark); width: 14px; height: 14px; }
+      .case-aihome .ca-tl-line  { flex: 1; width: 2px; background: var(--border-light); min-height: 20px; }
+      .case-aihome .ca-tl-body  { padding-bottom: 22px; }
+      .case-aihome .ca-tl-tag   { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--primary-dark); }
+      .case-aihome .ca-tl-name  { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin: 2px 0; }
+      .case-aihome .ca-tl-note  { font-size: 0.78rem; font-weight: 400; color: var(--text-secondary); }
+
+      /* ---- WORKFLOW TABLES ---- */
+      .case-aihome .ca-tw { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border-light); }
+      .case-aihome .ca-tbl { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 360px; }
+      .case-aihome .ca-tbl thead { background: var(--primary-light, rgba(214,151,255,.1)); }
+      .case-aihome .ca-tbl th {
+        padding: 11px 14px; text-align: left;
+        font-weight: 700; font-size: 0.69rem;
+        text-transform: uppercase; letter-spacing: .07em;
+        color: var(--primary-dark); border-bottom: 2px solid var(--border-light);
+      }
+      .case-aihome .ca-tbl td {
+        padding: 11px 14px; border-bottom: 1px solid var(--border-light);
+        color: var(--text-primary); vertical-align: top; line-height: 1.5; font-weight: 400;
+      }
+      .case-aihome .ca-tbl tbody tr:last-child td { border-bottom: none; }
+      .case-aihome .ca-tbl .ca-stg { font-weight: 600; color: var(--primary-dark); white-space: nowrap; }
+      .case-aihome .ca-pill {
+        display: inline-block;
+        background: var(--primary-light, rgba(214,151,255,.15));
+        color: var(--primary-dark);
+        font-size: 0.71rem; font-weight: 700;
+        padding: 2px 9px; border-radius: 20px; white-space: nowrap;
+      }
+
+      /* ---- SKILL CARDS ---- */
+      .case-aihome .ca-skills { display: flex; flex-direction: column; gap: 14px; }
+      .case-aihome .ca-skill {
+        border: 1px solid var(--border-light);
+        border-left: 4px solid var(--primary);
+        border-radius: 0 12px 12px 0;
+        padding: 16px 18px; background: var(--bg);
+      }
+      .case-aihome .ca-skill-nm {
+        display: inline-block;
+        font-family: 'Courier New', monospace;
+        font-size: 0.76rem; font-weight: 700;
+        color: var(--primary-dark);
+        background: var(--primary-light, rgba(214,151,255,.15));
+        padding: 2px 8px; border-radius: 4px; margin-bottom: 8px;
+      }
+      .case-aihome .ca-skill-ds { font-size: 0.86rem; font-weight: 400; color: var(--text-secondary); line-height: 1.6; margin: 0; }
+
+      /* ---- TOOL BADGES ---- */
+      .case-aihome .ca-tools { display: flex; flex-wrap: wrap; gap: 8px; }
+      .case-aihome .ca-tbadge {
+        display: inline-flex; align-items: center;
+        background: var(--bg); border: 1px solid var(--border-light);
+        border-radius: 8px; padding: 6px 14px;
+        font-size: 0.82rem; font-weight: 600; color: var(--text-primary);
+      }
+
+      /* ---- PROMPT FLOW ---- */
+      .case-aihome .ca-pflow { display: flex; align-items: center; overflow-x: auto; padding: 4px 0; gap: 0; }
+      .case-aihome .ca-pf-step {
+        flex: 1; min-width: 88px; background: var(--bg);
+        border: 1px solid var(--border-light); border-radius: 10px;
+        padding: 12px 8px; text-align: center; flex-shrink: 0;
+      }
+      .case-aihome .ca-pf-final { background: var(--primary); border-color: var(--primary); }
+      .case-aihome .ca-pf-nm   { font-size: 0.75rem; font-weight: 700; color: var(--text-primary); line-height: 1.3; }
+      .case-aihome .ca-pf-nt   { font-size: 0.65rem; font-weight: 400; color: var(--text-secondary); margin-top: 3px; }
+      .case-aihome .ca-pf-final .ca-pf-nm { color: var(--white); }
+      .case-aihome .ca-pf-final .ca-pf-nt { color: rgba(255,255,255,.8); }
+      .case-aihome .ca-pf-arr  { color: var(--primary); font-weight: 700; padding: 0 5px; flex-shrink: 0; font-size: 0.9rem; }
+
+      /* ---- STRATEGY REPORT CTA CARD ---- */
+      .case-aihome .ca-rpt {
+        border: 1px solid var(--border-light); border-radius: 16px;
+        padding: 22px; background: var(--bg);
+        display: flex; flex-direction: column; gap: 14px;
+      }
+      .case-aihome .ca-rpt-ttl  { font-size: 1rem; font-weight: 700; color: var(--text-primary); margin: 0; }
+      .case-aihome .ca-rpt-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+      .case-aihome .ca-rtag     { font-size: 0.7rem; font-weight: 700; background: var(--primary-light, rgba(214,151,255,.15)); color: var(--primary-dark); padding: 2px 9px; border-radius: 20px; }
+      .case-aihome .ca-rpt-cta  { display: flex; gap: 10px; flex-wrap: wrap; }
+
+      /* ---- KEY TAKEAWAY 5-CARD GRID ---- */
+      .case-aihome .ca-tgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 16px; }
+      @media (max-width: 560px) { .case-aihome .ca-tgrid { grid-template-columns: 1fr 1fr; } }
+      @media (max-width: 360px) { .case-aihome .ca-tgrid { grid-template-columns: 1fr; } }
+      .case-aihome .ca-tc {
+        background: var(--bg); border: 1px solid var(--border-light);
+        border-radius: 14px; padding: 18px 14px; text-align: center;
+        transition: transform .18s ease, border-color .18s ease;
+      }
+      .case-aihome .ca-tc:hover { transform: translateY(-3px); border-color: var(--primary); }
+      .case-aihome .ca-tc-ic  { font-size: 1.7rem; margin-bottom: 8px; line-height: 1; }
+      .case-aihome .ca-tc-ttl { font-size: 0.82rem; font-weight: 700; color: var(--text-primary); margin-bottom: 5px; }
+      .case-aihome .ca-tc-ds  { font-size: 0.74rem; font-weight: 400; color: var(--text-secondary); line-height: 1.45; margin: 0; }
+      </style>
+
+      <!-- =========================================================
+           1. HERO
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">48-Hour AI-Powered Content Creator Assessment</h2>
+        <p class="ca-sub">Designing an AI-powered content production system to deliver strategy, scripts, SEO assets, and AI-generated videos for AIHOME Malaysia &mdash; executed under a strict 48-hour deadline.</p>
+
+        <div class="ca-pm-grid" role="list" aria-label="Primary assessment metrics">
+          <div class="ca-pm" role="listitem">
+            <div class="ca-pm-n">48H</div>
+            <div class="ca-pm-l">Deadline</div>
+          </div>
+          <div class="ca-pm" role="listitem">
+            <div class="ca-pm-n">2</div>
+            <div class="ca-pm-l">Products</div>
+          </div>
+          <div class="ca-pm" role="listitem">
+            <div class="ca-pm-n">6</div>
+            <div class="ca-pm-l">Deliverables</div>
+          </div>
+        </div>
+
+        <div class="ca-sm-grid" role="list" aria-label="Supporting metrics">
+          <div class="ca-sm" role="listitem">
+            <span class="ca-sm-ic" aria-hidden="true">&#129302;</span>
+            <span class="ca-sm-tx">20&ndash;30 AI Concepts per Product</span>
+          </div>
+          <div class="ca-sm" role="listitem">
+            <span class="ca-sm-ic" aria-hidden="true">&#9881;</span>
+            <span class="ca-sm-tx">2 Custom Manus AI Skills Built</span>
+          </div>
+          <div class="ca-sm" role="listitem">
+            <span class="ca-sm-ic" aria-hidden="true">&#127916;</span>
+            <span class="ca-sm-tx">2 AI Videos Produced</span>
+          </div>
+          <div class="ca-sm" role="listitem">
+            <span class="ca-sm-ic" aria-hidden="true">&#10003;</span>
+            <span class="ca-sm-tx">Completed &amp; Submitted On Time</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           2. ASSESSMENT SNAPSHOT
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">Assessment Snapshot</h2>
+        <div class="ca-snap">
+          <div class="ca-snap-g">
+            <div class="ca-snap-r">
+              <div class="ca-snap-lbl">Company</div>
+              <div class="ca-snap-val">AIHOME Malaysia</div>
+            </div>
+            <div class="ca-snap-r">
+              <div class="ca-snap-lbl">Role</div>
+              <div class="ca-snap-val">AI Powered Content Creator</div>
+            </div>
+            <div class="ca-snap-r">
+              <div class="ca-snap-lbl">Assessment</div>
+              <div class="ca-snap-val">48-Hour Practical Challenge</div>
+            </div>
+            <div class="ca-snap-r">
+              <div class="ca-snap-lbl">Objective</div>
+              <div class="ca-snap-val">Design an AI-native content production workflow for the Malaysian smart home market</div>
+            </div>
+            <div class="ca-snap-r">
+              <div class="ca-snap-lbl">Scope</div>
+              <div class="ca-snap-val">2 Products &middot; 6 Video Strategies &middot; AI SEO Assets &middot; AI Video Production &middot; Publishing Framework</div>
+            </div>
+            <div class="ca-snap-r">
+              <div class="ca-snap-lbl">Evaluation Criteria</div>
+              <div class="ca-snap-val">Speed &middot; Prompt Engineering &middot; Conversion Thinking &middot; AI Workflow Design &middot; Execution Quality</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           3. THE BRIEF
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">The Brief</h2>
+        <p class="ca-sub">The assessment framing made the hiring bar explicit. Three directives defined the evaluation criteria:</p>
+        <div class="ca-quotes">
+          <div class="ca-q">
+            <div class="ca-q-mark" aria-hidden="true">&ldquo;</div>
+            <p class="ca-q-text">We do not hire traditional content creators.</p>
+          </div>
+          <div class="ca-q">
+            <div class="ca-q-mark" aria-hidden="true">&ldquo;</div>
+            <p class="ca-q-text">We hire AI-augmented growth machines.</p>
+          </div>
+          <div class="ca-q" style="border-left-color:var(--primary-dark);">
+            <div class="ca-q-mark" aria-hidden="true">&ldquo;</div>
+            <p class="ca-q-text">Show us how you use AI as a weapon.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           4. EXECUTION TIMELINE
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2" style="text-align:center;margin-bottom:24px;">Execution Timeline</h2>
+        <div class="ca-tl-wrap" role="list" aria-label="48-hour execution timeline">
+
+          <div class="ca-tl-row" role="listitem">
+            <div class="ca-tl-sp"><div class="ca-tl-dot ca-tl-dot-s"></div><div class="ca-tl-line"></div></div>
+            <div class="ca-tl-body">
+              <div class="ca-tl-tag">Start</div>
+              <div class="ca-tl-name">Assignment Received</div>
+              <div class="ca-tl-note">Hour 0 &mdash; brief and products confirmed</div>
+            </div>
+          </div>
+
+          <div class="ca-tl-row" role="listitem">
+            <div class="ca-tl-sp"><div class="ca-tl-dot"></div><div class="ca-tl-line"></div></div>
+            <div class="ca-tl-body">
+              <div class="ca-tl-tag">Phase 1</div>
+              <div class="ca-tl-name">Product &amp; Market Research</div>
+              <div class="ca-tl-note">Aqara &amp; Narwal positioning &middot; Malaysian smart home audience</div>
+            </div>
+          </div>
+
+          <div class="ca-tl-row" role="listitem">
+            <div class="ca-tl-sp"><div class="ca-tl-dot"></div><div class="ca-tl-line"></div></div>
+            <div class="ca-tl-body">
+              <div class="ca-tl-tag">Phase 1</div>
+              <div class="ca-tl-name">Prompt Engineering</div>
+              <div class="ca-tl-note">Built 2 custom Manus AI skills encoding full platform &amp; SEO logic</div>
+            </div>
+          </div>
+
+          <div class="ca-tl-row" role="listitem">
+            <div class="ca-tl-sp"><div class="ca-tl-dot"></div><div class="ca-tl-line"></div></div>
+            <div class="ca-tl-body">
+              <div class="ca-tl-tag">Phase 1</div>
+              <div class="ca-tl-name">20&ndash;30 AI Concepts Generated</div>
+              <div class="ca-tl-note">Per product &mdash; hooks, angles, captions, hashtag stacks</div>
+            </div>
+          </div>
+
+          <div class="ca-tl-row" role="listitem">
+            <div class="ca-tl-sp"><div class="ca-tl-dot"></div><div class="ca-tl-line"></div></div>
+            <div class="ca-tl-body">
+              <div class="ca-tl-tag">Phase 1</div>
+              <div class="ca-tl-name">Best Concepts Selected &amp; Scripted</div>
+              <div class="ca-tl-note">3 per product &rarr; full scene-by-scene scripts with voiceover &amp; cues</div>
+            </div>
+          </div>
+
+          <div class="ca-tl-row" role="listitem">
+            <div class="ca-tl-sp"><div class="ca-tl-dot"></div><div class="ca-tl-line"></div></div>
+            <div class="ca-tl-body">
+              <div class="ca-tl-tag">Phase 1</div>
+              <div class="ca-tl-name">SEO Assets Produced</div>
+              <div class="ca-tl-note">Platform captions &amp; hashtag stacks &mdash; English (Localized for Malaysian Market)</div>
+            </div>
+          </div>
+
+          <div class="ca-tl-row" role="listitem">
+            <div class="ca-tl-sp"><div class="ca-tl-dot"></div><div class="ca-tl-line"></div></div>
+            <div class="ca-tl-body">
+              <div class="ca-tl-tag">Phase 2</div>
+              <div class="ca-tl-name">AI Video Production</div>
+              <div class="ca-tl-note">Kling AI &middot; ElevenLabs &middot; CapCut &middot; Photoshop</div>
+            </div>
+          </div>
+
+          <div class="ca-tl-row" role="listitem">
+            <div class="ca-tl-sp"><div class="ca-tl-dot ca-tl-dot-e"></div></div>
+            <div class="ca-tl-body">
+              <div class="ca-tl-tag">Completed</div>
+              <div class="ca-tl-name">Submission</div>
+              <div class="ca-tl-note">Strategy report &plus; scripts &plus; SEO assets &plus; AI videos delivered</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- =========================================================
+           5. PHASE 1 WORKFLOW TABLE
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">Phase 1 &mdash; AI Content Strategy</h2>
+        <p class="ca-sub">A reusable AI skill system was built first, generating all content assets at scale and eliminating repetitive prompting.</p>
+        <div class="ca-tw">
+          <table class="ca-tbl" aria-label="Phase 1 AI Content Strategy workflow">
+            <thead>
+              <tr>
+                <th scope="col">Stage</th>
+                <th scope="col">Tool</th>
+                <th scope="col">Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ca-stg" scope="row">Product Research</td>
+                <td><span class="ca-pill">Manual</span></td>
+                <td>Competitive positioning for Aqara &amp; Narwal in the Malaysian smart home market</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">Platform Analysis</td>
+                <td><span class="ca-pill">Manual</span></td>
+                <td>Content format, hook structure &amp; SEO requirements per platform (TikTok, Instagram, Facebook)</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">Concept Generation</td>
+                <td><span class="ca-pill">Manus AI</span></td>
+                <td>20&ndash;30 distinct video concepts per product &mdash; hooks, angles, SEO captions, hashtag stacks</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">Script Development</td>
+                <td><span class="ca-pill">Manus AI</span></td>
+                <td>6 full scene-by-scene scripts (3 per product) with voiceover lines &amp; transition cues</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">SEO Distribution</td>
+                <td><span class="ca-pill">Manus AI</span></td>
+                <td>Platform-specific captions &amp; hashtag stacks in English (Localized for Malaysian Market)</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">Human Review</td>
+                <td><span class="ca-pill">Manual</span></td>
+                <td>Tone, accuracy &amp; brand alignment verified before advancing to production</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           6. PHASE 2 WORKFLOW TABLE
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">Phase 2 &mdash; AI Video Production</h2>
+        <p class="ca-sub">Scripts were translated into produced video assets using an AI-native stack &mdash; no traditional filming required.</p>
+        <div class="ca-tw">
+          <table class="ca-tbl" aria-label="Phase 2 AI Video Production workflow">
+            <thead>
+              <tr>
+                <th scope="col">Stage</th>
+                <th scope="col">AI Tool</th>
+                <th scope="col">Deliverable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ca-stg" scope="row">Storyboard</td>
+                <td><span class="ca-pill">ChatGPT Image 2.0 </span></td>
+                <td>Scene-by-scene composition layouts defining visuals, text positions &amp; flow</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">Asset Sourcing</td>
+                <td><span class="ca-pill">ChatGPT Image 2.0</span></td>
+                <td>Product compositions, UI mockups &amp; background preparation</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">AI Video Generation</td>
+                <td><span class="ca-pill">Kling AI</span></td>
+                <td>Scene-level video clips rendered from static assets &mdash; no live filming</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">AI Voiceover</td>
+                <td><span class="ca-pill">ElevenLabs</span></td>
+                <td>English AI voiceover timed &amp; toned for Malaysian market audiences</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">Assembly &amp; Finishing</td>
+                <td><span class="ca-pill">CapCut</span></td>
+                <td>Synced video with captions, transitions &amp; platform-specific formatting</td>
+              </tr>
+              <tr>
+                <td class="ca-stg" scope="row">Export</td>
+                <td><span class="ca-pill">CapCut</span></td>
+                <td>Vertical 9:16 video optimized for TikTok, Instagram Reels &amp; Facebook Reels</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           7. CUSTOM AI SKILLS
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">Custom Manus AI Skills</h2>
+        <p class="ca-sub">Two purpose-built skills encoded the full production logic &mdash; making the workflow repeatable for any product without re-prompting.</p>
+        <div class="ca-skills">
+          <div class="ca-skill">
+            <div class="ca-skill-nm">Aihome_Master_Content_SEO_Machine.skill</div>
+            <p class="ca-skill-ds"><strong>Role:</strong> Master orchestrator. Ingests a product brief and target platform, then generates 20&ndash;30 distinct video concepts with hook angles, narrative structures, SEO captions, and hashtag stacks. Encodes educational and entertainment-led formats simultaneously for diverse content angles from a single invocation.</p>
+          </div>
+          <div class="ca-skill">
+            <div class="ca-skill-nm">Aihome_ShortForm_Content_Machine.skill</div>
+            <p class="ca-skill-ds"><strong>Role:</strong> Refinement engine. Expands a selected concept into a full short-form script: scene-by-scene direction, voiceover lines, on-screen text cues, and transition logic &mdash; adapted for vertical video pacing and English (Localized for Malaysian Market) tone register.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           8. AI TOOL STACK
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">AI Tool Stack</h2>
+        <div class="ca-tools">
+          <span class="ca-tbadge">Manus AI</span>
+          <span class="ca-tbadge">ChatGPT Image 2.0</span>
+          <span class="ca-tbadge">Kling AI</span>
+          <span class="ca-tbadge">ElevenLabs</span>
+          <span class="ca-tbadge">CapCut</span>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           9. PROMPT ENGINEERING WORKFLOW
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">Prompt Engineering Workflow</h2>
+        <p class="ca-sub">Each AI skill was designed around a repeatable 5-stage prompt architecture:</p>
+        <div class="ca-pflow" role="list" aria-label="Prompt engineering workflow steps">
+          <div class="ca-pf-step" role="listitem">
+            <div class="ca-pf-nm">Prompt<br>Objective</div>
+            <div class="ca-pf-nt">Define goal &amp; constraints</div>
+          </div>
+          <div class="ca-pf-arr" aria-hidden="true">&rarr;</div>
+          <div class="ca-pf-step" role="listitem">
+            <div class="ca-pf-nm">Input<br>Context</div>
+            <div class="ca-pf-nt">Product &middot; Platform &middot; Audience</div>
+          </div>
+          <div class="ca-pf-arr" aria-hidden="true">&rarr;</div>
+          <div class="ca-pf-step" role="listitem">
+            <div class="ca-pf-nm">AI<br>Output</div>
+            <div class="ca-pf-nt">Concepts &middot; Scripts &middot; Captions</div>
+          </div>
+          <div class="ca-pf-arr" aria-hidden="true">&rarr;</div>
+          <div class="ca-pf-step" role="listitem">
+            <div class="ca-pf-nm">Human<br>Review</div>
+            <div class="ca-pf-nt">Tone &middot; Accuracy &middot; Fit</div>
+          </div>
+          <div class="ca-pf-arr" aria-hidden="true">&rarr;</div>
+          <div class="ca-pf-step ca-pf-final" role="listitem">
+            <div class="ca-pf-nm">Final<br>Asset</div>
+            <div class="ca-pf-nt">Approved output</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           10. VIDEO SHOWCASE
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">Video Showcase</h2>
+
+        <h3 class="ca-h3" style="margin-top:20px;">Aqara Script 1 &mdash; Storyboard</h3>
+        <div style="margin-bottom:24px;">
+          <img src="images/work/aihome/Aqara_Script1_Storyboard_Mockup.webp"
+               alt="Aqara Script 1 storyboard showing scene-by-scene composition layout for AIHOME Malaysia TikTok campaign"
+               loading="lazy"
+               style="width:100%;border-radius:12px;" />
+        </div>
+
+        <h3 class="ca-h3">Aqara Script 1 &mdash; Final Video</h3>
+        <div class="video-wrapper video-wrapper--landscape" style="margin-bottom:24px;">
+          <video controls preload="metadata" playsinline
+                 title="Aqara Script 1 - AI-generated product video for AIHOME Malaysia">
+            <source src="images/work/aihome/aqara_script1.mp4" type="video/mp4">
+            Your browser does not support the video element.
+            <a href="images/work/aihome/aqara_script1.mp4">Download Aqara video</a>.
+          </video>
+        </div>
+
+        <h3 class="ca-h3">Narwal Script 1 &mdash; Final Video</h3>
+        <div class="video-wrapper video-wrapper--landscape" style="margin-bottom:0;">
+          <video controls preload="metadata" playsinline
+                 title="Narwal Script 1 - AI-generated product video for AIHOME Malaysia">
+            <source src="images/work/aihome/Final_Narwal_Script1.mp4" type="video/mp4">
+            Your browser does not support the video element.
+            <a href="images/work/aihome/Final_Narwal_Script1.mp4">Download Narwal video</a>.
+          </video>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           11. STRATEGY REPORT CTA
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">Strategy Report</h2>
+        <div class="ca-rpt">
+          <h3 class="ca-rpt-ttl">AIHOME Content Strategy Report</h3>
+          <div class="ca-rpt-tags">
+            <span class="ca-rtag">Research</span>
+            <span class="ca-rtag">Scripts</span>
+            <span class="ca-rtag">SEO Framework</span>
+            <span class="ca-rtag">84 Pages</span>
+          </div>
+          <div class="ca-rpt-cta">
+            <a href="images/work/aihome/AIHOME_Content_Strategy_Report.pdf"
+               class="btn btn--outline btn--sm"
+               target="_blank"
+               rel="noopener noreferrer">&#128279; View Strategy Report &rarr;</a>
+            <a href="images/work/aihome/AIHOME_Content_Strategy_Report.pdf"
+               class="btn btn--accent btn--sm"
+               target="_blank"
+               rel="noopener noreferrer">&#128196; Open Report &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           12. KEY TAKEAWAYS
+      ========================================================= -->
+      <div class="ca-sec">
+        <h2 class="ca-h2">Key Takeaways</h2>
+        <div class="ca-tgrid" role="list" aria-label="Key takeaways">
+          <div class="ca-tc" role="listitem">
+            <div class="ca-tc-ic" aria-hidden="true">&#129302;</div>
+            <div class="ca-tc-ttl">AI Workflow Design</div>
+            <p class="ca-tc-ds">Skill-based AI systems eliminate repetitive prompting and maintain output consistency at scale.</p>
+          </div>
+          <div class="ca-tc" role="listitem">
+            <div class="ca-tc-ic" aria-hidden="true">&#9997;&#65039;</div>
+            <div class="ca-tc-ttl">Prompt Engineering</div>
+            <p class="ca-tc-ds">Encoding platform context and product specifics into skill logic prevents generic output and reduces review cycles.</p>
+          </div>
+          <div class="ca-tc" role="listitem">
+            <div class="ca-tc-ic" aria-hidden="true">&#127474;&#127486;</div>
+            <div class="ca-tc-ttl">Malaysian Localization</div>
+            <p class="ca-tc-ds">Hook structures, caption tone, and hashtag density were adapted for Malaysian audiences &mdash; not just translated.</p>
+          </div>
+          <div class="ca-tc" role="listitem">
+            <div class="ca-tc-ic" aria-hidden="true">&#128200;</div>
+            <div class="ca-tc-ttl">Scalability</div>
+            <p class="ca-tc-ds">Adding a third product requires only a new brief input. The workflow and skills remain unchanged.</p>
+          </div>
+          <div class="ca-tc" role="listitem">
+            <div class="ca-tc-ic" aria-hidden="true">&#9889;</div>
+            <div class="ca-tc-ttl">Production Speed</div>
+            <p class="ca-tc-ds">Full content strategy plus AI video production completed in under 48 hours &mdash; no live filming needed.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  `
+      },
       {
         id: 1,
         title: "CASE 01: Sparkle - AI-powered Organic Storytelling",
@@ -1013,7 +1646,7 @@
 
       </div>
     `
-      }
+      },
     ];
 
 

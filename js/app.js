@@ -1,4 +1,4 @@
-﻿    /* ============================================================
+    /* ============================================================
        UTILITY FUNCTIONS
     ============================================================ */
 
@@ -223,20 +223,29 @@
       document.getElementById('experienceTrack').innerHTML = html;
     }
 
-    /** Render projects grid – masonry layout */
+    /** Render projects grid — featured hero card first, then normalised cards */
     function renderProjects() {
       var html = '';
+
       for (var i = 0; i < projects.length; i++) {
         var proj = projects[i];
-        html += '<div class="project-card" data-project-id="' + proj.id + '" role="button" tabindex="0" aria-label="View details for ' + proj.title + '">' +
-          '<img src="' + proj.thumbnail + '" alt="' + proj.title + '" class="project-card__image" loading="lazy" onerror="handleImageError(this)" />' +
-          '<div class="project-card__overlay">' +
-            '<div class="project-card__icon"><i class="fas fa-search-plus"></i></div>' +
-            '<div class="project-card__title">' + proj.title + '</div>' +
-            '<div class="project-card__desc">' + proj.description + '</div>' +
-          '</div>' +
-        '</div>';
+
+        var imgAttrs =
+          i === 0
+            ? 'loading="eager" fetchpriority="high"'
+            : 'loading="lazy"';
+
+        html +=
+          '<div class="project-card" data-project-id="' + proj.id + '" role="button" tabindex="0" aria-label="View details for ' + proj.title + '">' +
+            '<img src="' + proj.thumbnail + '" alt="' + proj.title + '" class="project-card__image" ' + imgAttrs + ' onerror="handleImageError(this)" />' +
+            '<div class="project-card__overlay">' +
+              '<div class="project-card__icon"><i class="fas fa-search-plus"></i></div>' +
+              '<div class="project-card__title">' + proj.title + '</div>' +
+              '<div class="project-card__desc">' + proj.description + '</div>' +
+            '</div>' +
+          '</div>';
       }
+
       document.getElementById('projectsGrid').innerHTML = html;
     }
 
