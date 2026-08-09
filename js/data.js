@@ -873,9 +873,9 @@
         <div class="video-wrapper video-wrapper--landscape" style="margin-bottom:24px;">
           <video controls preload="metadata" playsinline
                  title="Aqara Script 1 - AI-generated product video for AIHOME Malaysia">
-            <source src="images/work/aihome/aqara_script1.mp4" type="video/mp4">
+            <source src="https://media.luelab.io.vn/port-media/aihome/aqara_script1.mp4" type="video/mp4">
             Your browser does not support the video element.
-            <a href="images/work/aihome/aqara_script1.mp4">Download Aqara video</a>.
+            <a href="https://media.luelab.io.vn/port-media/aihome/aqara_script1.mp4">Download Aqara video</a>.
           </video>
         </div>
 
@@ -883,9 +883,9 @@
         <div class="video-wrapper video-wrapper--landscape" style="margin-bottom:0;">
           <video controls preload="metadata" playsinline
                  title="Narwal Script 1 - AI-generated product video for AIHOME Malaysia">
-            <source src="images/work/aihome/Final_Narwal_Script1.mp4" type="video/mp4">
+            <source src="https://media.luelab.io.vn/port-media/aihome/Final_Narwal_Script1.mp4" type="video/mp4">
             Your browser does not support the video element.
-            <a href="images/work/aihome/Final_Narwal_Script1.mp4">Download Narwal video</a>.
+            <a href="https://media.luelab.io.vn/port-media/aihome/Final_Narwal_Script1.mp4">Download Narwal video</a>.
           </video>
         </div>
       </div>
@@ -1000,7 +1000,7 @@
         <h3 class="case-title">Hero Video</h3>
         <div class="video-wrapper hero-video">
           <video controls preload="metadata">
-            <source src="images/work/sparkle/brandstorytelling.mp4" type="video/mp4">
+            <source src="https://media.luelab.io.vn/port-media/sparkle/brandstorytelling.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -1024,15 +1024,15 @@
         <p class="case-text">A series of short-form videos designed to showcase Sparkle's jewelry through authentic storytelling.</p>
         <div class="case-gallery-grid">
           <div class="gallery-item">
-            <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/sparkle/productstorytelling_1.mp4" type="video/mp4"></video></div>
+            <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/sparkle/productstorytelling_1.mp4" type="video/mp4"></video></div>
             <div class="gallery-metric"><i class="fas fa-eye"></i> 18K Views</div>
           </div>
           <div class="gallery-item">
-            <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/sparkle/productstorytelling_2.mp4" type="video/mp4"></video></div>
+            <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/sparkle/productstorytelling_2.mp4" type="video/mp4"></video></div>
             <div class="gallery-metric"><i class="fas fa-eye"></i> 14K Views</div>
           </div>
           <div class="gallery-item">
-            <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/sparkle/productstorytelling_3.mp4" type="video/mp4"></video></div>
+            <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/sparkle/productstorytelling_3.mp4" type="video/mp4"></video></div>
             <div class="gallery-metric"><i class="fas fa-eye"></i> 12K Views</div>
           </div>
         </div>
@@ -1106,7 +1106,7 @@
         <p class="case-text">Live Demo</p>
         <div class="video-wrapper video-wrapper--landscape">
           <video controls preload="metadata">
-            <source src="images/work/smartcontrol/fay.mp4" type="video/mp4">
+            <source src="https://media.luelab.io.vn/port-media/smartcontrol/fay.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -1212,7 +1212,7 @@
         <p class="case-text" style="text-align: center; margin-top: -12px; margin-bottom: 24px;">Official Fashion Sponsorship Campaign</p>
         <div class="video-wrapper hero-video">
           <video controls preload="metadata">
-            <source src="images/work/ritara/missgrand1.mp4" type="video/mp4">
+            <source src="https://media.luelab.io.vn/port-media/ritara/missgrand1.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -1234,9 +1234,9 @@
         <h3 class="case-title">Content Series</h3>
         <p class="case-text">A selection of content produced across RITARA's brand communication projects</p>
         <div class="case-gallery-grid">
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/ritara/lookbook1.mp4" type="video/mp4"></video></div>
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/ritara/lookbook2.mp4" type="video/mp4"></video></div>
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/ritara/daily.mp4" type="video/mp4"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/ritara/lookbook1.mp4" type="video/mp4"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/ritara/lookbook2.mp4" type="video/mp4"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/ritara/daily.mp4" type="video/mp4"></video></div>
         </div>
       </div>
 
@@ -1281,16 +1281,6 @@
         </div>
       </div>
 
-      <!-- 3. Hero Video -->
-      <div class="case-section">
-        <h3 class="case-title">Hero Video</h3>
-        <div class="video-wrapper hero-video">
-          <video controls preload="metadata">
-            <source src="images/work/namperfume/campaign1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
 
       <!-- 4. Performance -->
       <div class="case-section">
@@ -1307,10 +1297,7 @@
       <div class="case-section">
         <h3 class="case-title">Content Series</h3>
         <p class="case-text">A collection of promotional content created for Namperfume's TikTok Shop and livestream campaigns.</p>
-        <div class="case-gallery-grid">
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/namperfume/campaign2.mp4" type="video/mp4"></video></div>
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/namperfume/campaign3.mp4" type="video/mp4"></video></div>
-        </div>
+
       </div>
 
       <!-- 6. My Contribution -->
@@ -1359,7 +1346,7 @@
         <h3 class="case-title">Hero Video</h3>
         <div class="video-wrapper hero-video">
           <video controls preload="metadata">
-            <source src="images/work/hugu/content1.mp4" type="video/mp4">
+            <source src="https://media.luelab.io.vn/port-media/hugu/content1.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -1381,9 +1368,9 @@
         <h3 class="case-title">Content Series</h3>
         <p class="case-text">A collection of short-form fashion videos created for HUGU's social media channels.</p>
         <div class="case-gallery-grid">
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content2.mp4" type="video/mp4"></video></div>
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content3.mp4" type="video/mp4"></video></div>
-          <div class="video-wrapper"><video controls preload="metadata"><source src="images/work/hugu/content4.mp4" type="video/mp4"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/hugu/content2.mp4" type="video/mp4"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/hugu/content3.mp4" type="video/mp4"></video></div>
+          <div class="video-wrapper"><video controls preload="metadata"><source src="https://media.luelab.io.vn/port-media/hugu/content4.mp4" type="video/mp4"></video></div>
         </div>
       </div>
 
